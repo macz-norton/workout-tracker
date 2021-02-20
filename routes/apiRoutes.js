@@ -17,7 +17,7 @@ router.get("/api/workouts", (req, res) => {
 
 router.post("/api/workouts", (req, res) => {
     
-    Workout.create(newWorkout).then((workout) => {
+    Workout.create(req.body).then((workout) => {
 
         res.json(workout);
 
@@ -33,12 +33,21 @@ router.put("/api/workouts/:id", (req, res) => {
 
     const newExercise = req.body;
 
-    Workout.findByIdAndUpdate(req.params.id, {$push: {
+    Workout.findByIdAndUpdate(req.params.id, {
+        $push: {
+            exercises: newExercise
+        }
+    }, {
+        new: true
+    }).then((workout) => {
 
-        exercises: newExercise
+        res.json(workout);
+        
+    }).catch((err) => {
 
-    }}).then
+        res.status(500).json(err);
 
+    });
 });
 
 
