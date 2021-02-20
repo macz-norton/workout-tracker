@@ -54,7 +54,20 @@ router.put("/api/workouts/:id", (req, res) => {
 
 router.get("/api/workouts/range", (req, res) => {
 
-    // last seven workouts 
+    // last seven workouts
+    Workout
+        .find()
+        .sort({date: -1})
+        .limit(7)
+        .then((workouts) => {
+
+            res.json(workouts);
+
+        }).catch((err) => {
+
+            res.status(500).json(err);
+
+        });
 
 });
 
