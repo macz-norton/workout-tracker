@@ -11,8 +11,14 @@ const WorkoutSchema = new Schema ({
         {
             // add type,name,duration required + add other validation
             // default day.now value for day
-            type: String,
-            name: String,
+            type: {
+                type: String,
+                required: true
+            },
+            name: {
+                type: String,
+                required: true
+            },
             duration: Number,
             weight: Number,
             reps: Number,
