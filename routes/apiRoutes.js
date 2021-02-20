@@ -54,6 +54,8 @@ router.put("/api/workouts/:id", (req, res) => {
 
 router.get("/api/workouts/range", (req, res) => {
 
+    // last seven workouts 
+
 });
 
 module.exports = router;
