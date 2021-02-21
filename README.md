@@ -3,10 +3,13 @@
 
 ## Description
 
-The Team Profile Generator is a Node.js command-line application that takes in information about employees and generates an HTML webpage that displays summaries for each person.
+The Workout Tracker is an app that allows users to track their resistance and cardio workouts. The application is deployed on Heroku, connects to a MongoDB database using a Mongoose schema, and handles routes with Express.
 
 ```
-As a user, I want to be able to view create and track daily workouts. I want to be able to log multiple exercises in a workout on a given day. I should also be able to track the name, type, weight, sets, reps, and duration of exercise. If the exercise is a cardio exercise, I should be able to track my distance traveled.
+As a user, I want to be able to view create and track daily workouts. 
+I want to be able to log multiple exercises in a workout on a given day. 
+I should also be able to track the name, type, weight, sets, reps, and duration of exercise. 
+If the exercise is a cardio exercise, I should be able to track my distance traveled.
 ```
 
 ## Table of Contents
@@ -19,18 +22,12 @@ As a user, I want to be able to view create and track daily workouts. I want to 
 
 ## Installation
 
-1. Open your integrated terminal 
-2. Clone this repository into a local directory (via SSH) with this command in your terminal: `git clone git@github.com:macz-norton/team-profile-generator.git`
-3. Install Node.js by running `npm i` in your terminal
+No installation required.
 
 ## Usage
 
-To run the command-line application following installation, run `node app.js` in your terminal.
-
-You will be prompted with questions about your team and your answers will be used to build the `team.html` file generated in the `output` folder:
-* Video that demonstrates the application's functionality: [watch video](https://user-images.githubusercontent.com/71162422/103465483-ae982280-4cf0-11eb-96a0-132fafe022b9.mp4)
-* Inquirer prompt questions in the user's terminal: ![Terminal screenshot](https://user-images.githubusercontent.com/71162422/103465488-c1125c00-4cf0-11eb-9dd0-9492d6a5b99a.png)
-* Output HTML file from prompted questions: ![Team profile HTML page](https://user-images.githubusercontent.com/71162422/103465494-cbccf100-4cf0-11eb-9173-57e90530b7d5.png)
+Link to the deployed application: https://murmuring-beach-32531.herokuapp.com/
+![Workout tracker](https://user-images.githubusercontent.com/71162422/108615659-30383280-73bb-11eb-9b1b-0aa40c29b7fa.png)
 
 ## Tests
 
